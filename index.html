@@ -8,9 +8,9 @@
     :root {
       --bg-color: #121212;
       --card-bg: #1e1e1e;
-      --text-color: #e0e0e0;
-      --accent: #00bcd4;
-      --hover-shadow: rgba(0, 188, 212, 0.4);
+      --text-color: #ffffff;
+      --accent: #ffffff;
+      --hover-shadow: rgba(255, 255, 255, 0.4);
     }
 
     body {
@@ -31,12 +31,6 @@
       font-size: 2.5rem;
     }
 
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.1rem;
-      color: var(--accent);
-    }
-
     .container {
       padding: 2rem;
       max-width: 1200px;
@@ -49,7 +43,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row */
       gap: 1.5rem;
       margin-top: 1rem;
     }
@@ -87,7 +81,6 @@
 
   <header>
     <h1>Welcome to My Portfolio</h1>
-    <p>Showcasing My Works</p>
   </header>
 
   <div class="container">
@@ -99,7 +92,13 @@
           <h3>Alkaline Doggy</h3>
         </div>
       </div>
-      <!-- Add more items here -->
+      <div class="item">
+        <img src="AlkalineDoggy.jpg.PNG" alt="My Artwork" />
+        <div class="item-content">
+          <h3>Alkaline Doggy</h3>
+        </div>
+      </div>
+      <!-- Add more items here as needed -->
     </div>
   </div>
 
