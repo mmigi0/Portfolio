@@ -37,13 +37,9 @@
       margin: auto;
     }
 
-    h2, h3 {
-      color: var(--accent);
-    }
-
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
       margin-top: 1rem;
     }
@@ -53,7 +49,6 @@
       border-radius: 12px;
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 0 0 transparent;
     }
 
     .item:hover {
@@ -63,8 +58,14 @@
 
     .item img {
       width: 100%;
-      height: auto;
-      border-bottom: 3px solid var(--accent);
+      height: 0;
+      padding-top: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .square-force {
+      aspect-ratio: 1 / 1;
     }
 
     .item-content {
@@ -74,37 +75,36 @@
 
     .item-content h3 {
       margin: 0;
+      color: var(--text-color);
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to My Portfolio</h1>
+    <h1>My Portfolio</h1>
   </header>
 
   <div class="container">
-    <h2>My Artworks</h2>
     <div class="grid">
       <div class="item">
-        <img src="images/AlkalineDoggy.jpg.PNG" alt="My Artwork" />
+        <img src="images/AlkalineDoggy.jpg.JPG" alt="Alkaline Doggy">
         <div class="item-content">
           <h3>Alkaline Doggy</h3>
         </div>
       </div>
       <div class="item">
-        <img src="images/NomadismLogo.JPG" alt="My Artwork" />
+        <img src="images/NomadismLogo.JPG" alt="Nomadism Logo" class="square-force">
         <div class="item-content">
-          <h3>Nomadism</h3>
+          <h3>Nomadism Logo</h3>
         </div>
       </div>
       <div class="item">
-        <img src="images/IgniteLogo.JPG" alt="My Artwork" />
+        <img src="images/IgniteLogo.jpg" alt="Ignite Logo">
         <div class="item-content">
-          <h3>IGNITE Club MMCMHS</h3></h3>
+          <h3>Ignite Logo</h3>
         </div>
       </div>
-      <!-- Add more items here as needed -->
     </div>
   </div>
 
