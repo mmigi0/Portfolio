@@ -60,3 +60,9 @@
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
       box-shadow: 0 0 0 transparent;
+<div class="item">
+  <img src="AlkalineDoggy.jpg.PNG" alt="My Artwork" />
+  <div class="item-content">
+    <h3>Alkaline Doggy</h3>
+  </div>
+</div>
